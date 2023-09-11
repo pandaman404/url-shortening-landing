@@ -1,3 +1,7 @@
+import iconBrandRecognition from '@/images/icon-brand-recognition.svg';
+import iconDetailedRecords from '@/images/icon-detailed-records.svg';
+import iconFullyCustomizable from '@/images/icon-fully-customizable.svg';
+
 export const headerLinks = [
   {
     id: 1,
@@ -18,16 +22,19 @@ export const stats = [
     id: 1,
     name: 'Brand Recognition',
     desc: "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instill confidence in your Content.",
+    img: iconBrandRecognition,
   },
   {
     id: 2,
     name: 'Detailed Records',
     desc: 'Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.',
+    img: iconDetailedRecords,
   },
   {
     id: 3,
     name: 'Fully Customizable',
-    desc: 'Improve brand awareness and content discoverability through customizable links, supercharging audience engagement',
+    desc: 'Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.',
+    img: iconFullyCustomizable,
   },
 ];
 
