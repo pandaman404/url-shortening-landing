@@ -1,6 +1,10 @@
 import iconBrandRecognition from '@/images/icon-brand-recognition.svg';
 import iconDetailedRecords from '@/images/icon-detailed-records.svg';
 import iconFullyCustomizable from '@/images/icon-fully-customizable.svg';
+import iconFacebook from '@/images/icon-facebook.svg';
+import iconTwitter from '@/images/icon-twitter.svg';
+import iconPinterest from '@/images/icon-pinterest.svg';
+import iconInstagram from '@/images/icon-instagram.svg';
 
 export const headerLinks = [
   {
@@ -53,5 +57,28 @@ export const footerLinks = [
     id: 3,
     name: 'Company',
     subLinks: ['About', 'Our Team', 'Careers', 'Contact'],
+  },
+];
+
+export const socialLinks = [
+  {
+    id: 1,
+    alt: 'facebook',
+    logo: iconFacebook,
+  },
+  {
+    id: 2,
+    alt: 'twitter',
+    logo: iconTwitter,
+  },
+  {
+    id: 3,
+    alt: 'pinterest',
+    logo: iconPinterest,
+  },
+  {
+    id: 4,
+    alt: 'instagram',
+    logo: iconInstagram,
   },
 ];
