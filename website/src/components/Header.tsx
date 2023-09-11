@@ -6,7 +6,7 @@ import { headerLinks } from '@/utils/data';
 const Header = () => {
   return (
     <header className='container mx-auto'>
-      <div className='mt-10 mx-6 xl:mx-0 flex justify-between'>
+      <div className='mt-10 mx-6 md:mx-10 xl:mx-0 flex justify-between'>
         <nav className='flex gap-11 items-center'>
           <Image alt='logo' src={shortlyLogo} className='max-h-10' />
           <ul className='list-none hidden xl:flex gap-8 text-sm'>
