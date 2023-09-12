@@ -1,8 +1,11 @@
-'use client';
-const HamburgerBtn = () => {
+interface Props {
+  toggleMobileNavbar: () => void;
+}
+
+const HamburgerBtn = ({ toggleMobileNavbar }: Props) => {
   return (
     <button
-      onClick={() => console.log('open mobile Navbar')}
+      onClick={toggleMobileNavbar}
       className='h-5 w-6 flex flex-col justify-between relative top-2 xl:hidden'
     >
       <span className='h-[3px] w-full bg-shortly-grayish-violet'></span>

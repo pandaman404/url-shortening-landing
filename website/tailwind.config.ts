@@ -15,6 +15,7 @@ const config: Config = {
     extend: {
       colors: {
         'shortly-cyan': 'hsl(180, 66%, 49%)',
+        'shortly-hover-cyan': '#9BE3E2',
         'shortly-dark-violet': 'hsl(257, 27%, 26%)',
         'shortly-red': 'hsl(0, 87%, 67%)',
         'shortly-gray': 'hsl(0, 0%, 75%)',
