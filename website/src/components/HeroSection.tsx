@@ -3,7 +3,7 @@ import ilustrationWorking from '@/images/illustration-working.svg';
 
 const HeroSection = () => {
   return (
-    <section className='container mx-auto mb-40 flex flex-col gap-16 lg:gap-0 lg:mt-32 overflow-x-hidden'>
+    <section className='container mx-auto mb-40 lg:mb-[250px] flex flex-col gap-16 lg:gap-0 lg:mt-32 overflow-x-hidden'>
       <Image
         src={ilustrationWorking}
         alt='ilustration working'

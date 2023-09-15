@@ -1,10 +1,12 @@
 import { stats } from '@/utils/data';
 import Image from 'next/image';
+import ShortenLink from './ShortenLink';
 
 const StatsSection = () => {
   return (
-    <section className='w-full bg-gray-100 pt-40 pb-20 lg:pb-24 xl:pb-32'>
-      <div className='container mx-auto px-6 md:px-10 xl:px-0 flex flex-col items-center'>
+    <section className='w-full flex flex-col bg-gray-100  lg:pb-24 xl:pb-32'>
+      <ShortenLink />
+      <div className='container mx-auto px-6 md:px-10 xl:px-0 flex flex-col items-center pt-26 xl:pt-28 pb-10 xl:pb-20'>
         <h2 className='text-shortly-very-dark-blue font-bold text-[28px] sm:text-4xl text-center mb-5'>
           Advanced Statistics
         </h2>
