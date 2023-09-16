@@ -14,8 +14,8 @@ const HeroSection = () => {
           More than just shorter links
         </h1>
         <p className='text-shortly-grayish-violet text-base leading-relaxed lg:text-lg xl:text-xl sm:max-w-sm lg:max-w-md xl:max-w-lg mx-auto xl:mx-0 lg:mx-10 mb-5 sm:mb-6 lg:mb-10'>
-          Build your brand's recognition and get detailed insights on how your
-          links are performing.
+          Build your brand&apos;s recognition and get detailed insights on how
+          your links are performing.
         </p>
         <button
           type='button'
