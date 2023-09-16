@@ -1,5 +1,4 @@
 import { Link } from '@/utils/types';
-import { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 interface Props {
@@ -8,27 +7,6 @@ interface Props {
 }
 
 const LinkItem = ({ link, copyToClipboard }: Props) => {
-  // const [copied, setCopied] = useState(false);
-
-  // function copyToClipboard() {
-  //   // navigator.clipboard.writeText(link.shortLink).then(() => setCopied(true));
-  //   navigator.clipboard
-  //     .readText()
-  //     .then((clipboardText) => {
-  //       if (clipboardText !== link.shortLink) {
-  //         console.log('jio');
-  //         // navigator.clipboard
-  //         //   .writeText(link.shortLink)
-  //         //   .then(() => setCopied(true));
-  //       } else {
-  //         setCopied(false);
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error reading clipboard', error);
-  //     });
-  // }
-
   return (
     <article className='flex flex-col mx-auto lg:flex-row justify-items-center lg:justify-between items-center py-5 lg:px-6 w-[320px] sm:w-[480px] md:w-[560px] lg:w-[840px] xl:w-[1100px] gap-3.5 lg:gap-8 bg-white rounded-md mb-5'>
       <a className='w-fit max-w-[90%] text-base lg:w-7/12 truncate'>

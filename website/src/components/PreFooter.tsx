@@ -19,7 +19,10 @@ const PreFooter = () => {
         <h3 className='text-white mb-6 text-2xl xl:text-3xl font-bold'>
           Boost your links today
         </h3>
-        <button className='relative bg-shortly-cyan text-white font-bold px-10 lg:px-10 py-3 lg:py-3 rounded-full hover:bg-shortly-hover-cyan lg:mx-10 xl:mx-0 xl:text-xl xl:top-5'>
+        <button
+          type='button'
+          className='relative bg-shortly-cyan text-white font-bold px-10 lg:px-10 py-3 lg:py-3 rounded-full hover:bg-shortly-hover-cyan lg:mx-10 xl:mx-0 xl:text-xl xl:top-5'
+        >
           Get Started
         </button>
       </div>

@@ -14,8 +14,11 @@ const useShortenLink = () => {
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = async (form) => {
+    if (!form.url) return;
+
     setApiError('');
     setIsLoading(true);
+
     try {
       const data = await fetch(
         `https://api.shrtco.de/v2/shorten?url=${form.url}`

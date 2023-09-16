@@ -17,7 +17,10 @@ const HeroSection = () => {
           Build your brand's recognition and get detailed insights on how your
           links are performing.
         </p>
-        <button className='bg-shortly-cyan text-white font-bold px-8 lg:px-10 py-2 lg:py-3 rounded-full hover:bg-shortly-hover-cyan lg:mx-10 xl:mx-0 xl:text-xl'>
+        <button
+          type='button'
+          className='bg-shortly-cyan text-white font-bold px-8 lg:px-10 py-2 lg:py-3 rounded-full hover:bg-shortly-hover-cyan lg:mx-10 xl:mx-0 xl:text-xl'
+        >
           Get Started
         </button>
       </div>

@@ -5,6 +5,7 @@ interface Props {
 const HamburgerBtn = ({ toggleMobileNavbar }: Props) => {
   return (
     <button
+      type='button'
       onClick={toggleMobileNavbar}
       className='h-5 w-6 flex flex-col justify-between relative top-2 xl:hidden'
     >

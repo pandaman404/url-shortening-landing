@@ -40,9 +40,7 @@ const ShortenLink = () => {
               type='text'
               placeholder='Shorten a link here...'
               className='h-12 xl:h-16 w-full outline-none rounded-md px-5 text-sm lg:text-lg placeholder-shortly-gray'
-              {...register('url', {
-                required: 'Please add a link',
-              })}
+              {...register('url')}
             />
 
             {errors.url && (
