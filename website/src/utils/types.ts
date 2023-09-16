@@ -5,4 +5,5 @@ export type Inputs = {
 export interface Link {
   originalLink: string;
   shortLink: string;
+  copied: boolean;
 }

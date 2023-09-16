@@ -1,58 +1,22 @@
 'use client';
-import { FormEvent, useState } from 'react';
-import { useForm, SubmitHandler } from 'react-hook-form';
 import Image from 'next/image';
 import bgMobile from '@/images/bg-shorten-mobile.svg';
 import bgDesktop from '@/images/bg-shorten-desktop.svg';
 import LinkItem from './LinkItem';
 import Loader from './Loader';
-import { Inputs, Link } from '@/utils/types';
+import useShortenLink from '@/hooks/useShortenLink';
 
 const ShortenLink = () => {
-  const [linksData, setLinksData] = useState<Link[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [apiError, setApiError] = useState('');
   const {
+    linksData,
+    isLoading,
+    apiError,
     register,
     handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm<Inputs>();
-
-  const onSubmit: SubmitHandler<Inputs> = async (form) => {
-    setApiError('');
-    setIsLoading(true);
-    try {
-      const data = await fetch(
-        `https://api.shrtco.de/v2/shorten?url=${form.url}`
-      ).then((res) => res.json());
-
-      if (!data.ok) {
-        if (data.error_code == 2) {
-          setApiError('Please add a link');
-        } else {
-          setApiError(data.error);
-        }
-      }
-
-      if (data.ok) {
-        setLinksData([
-          ...linksData,
-          {
-            originalLink: data.result.original_link,
-            shortLink: data.result.short_link,
-          },
-        ]);
-        console.log(linksData);
-      }
-    } catch (error: any) {
-      setApiError('Something went wrong, try again later...');
-      console.log(error);
-    } finally {
-      setIsLoading(false);
-      reset();
-    }
-  };
+    errors,
+    onSubmit,
+    copyToClipboard,
+  } = useShortenLink();
 
   return (
     <section className='container w-fit sm:w-[76%] mx-auto relative bottom-20'>
@@ -103,7 +67,13 @@ const ShortenLink = () => {
       </div>
       {linksData.length > 0 &&
         linksData.map((link) => {
-          return <LinkItem key={link.shortLink} link={link} />;
+          return (
+            <LinkItem
+              key={link.shortLink}
+              link={link}
+              copyToClipboard={copyToClipboard}
+            />
+          );
         })}
     </section>
   );
