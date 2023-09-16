@@ -1,10 +1,16 @@
-const LinkItem = () => {
+import { Link } from '@/utils/types';
+
+interface Props {
+  link: Link;
+}
+
+const LinkItem = ({ link }: Props) => {
   return (
     <article className='flex flex-col mx-auto lg:flex-row justify-items-center lg:justify-between items-center py-5 lg:px-6 w-[320px] sm:w-[480px] md:w-[560px] lg:w-[840px] xl:w-[1100px] gap-3.5 lg:gap-8 bg-white rounded-md mb-5'>
-      <a className='lg:w-7/12 truncate'>https://www.youtube.com</a>
+      <a className='lg:w-7/12 truncate'>{link.originalLink}</a>
       <div className='border-t text-base border-gray-300 w-full lg:hidden'></div>
       <a className='text-right text-base lg:w-4/12 text-shortly-cyan truncate'>
-        https:/yb.com
+        {link.shortLink}
       </a>
       <button
         type='submit'
