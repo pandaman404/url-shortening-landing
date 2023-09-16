@@ -8,16 +8,14 @@ const PreFooter = () => {
       <Image
         src={bgMobile}
         alt=''
-        layout='fill'
-        className='object-cover sm:hidden'
+        className='object-cover w-full h-full flex sm:hidden'
       />
       <Image
         src={bgDesktop}
         alt=''
-        layout='fill'
-        className='hidden object-cover sm:block'
+        className='hidden object-cover w-full h-full sm:flex'
       />
-      <div className=' text-center relative z-1'>
+      <div className=' text-center absolute z-3'>
         <h3 className='text-white mb-6 text-2xl xl:text-3xl font-bold'>
           Boost your links today
         </h3>

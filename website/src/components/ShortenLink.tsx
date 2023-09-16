@@ -5,7 +5,7 @@ import LinkItem from './LinkItem';
 
 const ShortenLink = () => {
   return (
-    <section className='container w-[76%] mx-auto relative bottom-20'>
+    <section className='container w-fit sm:w-[76%] mx-auto relative bottom-20'>
       <div className=' bg-black-300 relative z-1 flex justify-center bg-shortly-dark-violet h-[180px] w-80 sm:w-[480px] md:w-[560px] lg:w-[840px] xl:w-[1100px] mx-auto rounded-lg object-right-bottom overflow-hidden mb-7'>
         <Image
           src={bgMobile}
